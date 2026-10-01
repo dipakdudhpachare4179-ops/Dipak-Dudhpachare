@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-ivory: #F7F4EC;
+  --color-ivory-light: #FAF8F3;
+  --color-forest: #163A32;
+  --color-forest-dark: #102C26;
+  --color-forest-muted: #244A41;
+  --color-champagne: #B89B67;
+  --color-champagne-light: #D5BD8D;
+  --color-champagne-muted: #9E8252;
+  --color-sage: #DDE5DE;
+  --color-sage-light: #EEF3EE;
+  --color-charcoal: #242824;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #F7F4EC;
+  color: #163A32;
+}
+
+/* Custom editorial typography styles */
+.font-display {
+  font-family: var(--font-serif);
+}
+
+.font-body {
+  font-family: var(--font-sans);
+}
+
+/* Subtle luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F4EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDE5DE;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B89B67;
+}
+
+/* Hairline borders */
+.border-champagne-hairline {
+  border-color: rgba(184, 155, 103, 0.3);
+}
+
+.border-forest-hairline {
+  border-color: rgba(22, 58, 50, 0.12);
+}
